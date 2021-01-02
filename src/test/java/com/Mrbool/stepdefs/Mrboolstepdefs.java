@@ -20,7 +20,7 @@ public class Mrboolstepdefs {
 	public void user_visits_home_page_of_mrbool() throws Throwable {
 		try {
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Program Files\\chromedriver_win32 newversion\\chromedriver.exe");
+					"C:\\Program Files\\chromedriver_87.0.4280.88\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.get("http://mrbool.com/");
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -42,6 +42,8 @@ public class Mrboolstepdefs {
 
 			act.moveToElement(cont.contents()).build().perform();
 			act.click();
+			
+			
           WebDriverWait stay= new WebDriverWait(driver,30);
 		} catch (Exception e) {
 
